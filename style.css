@@ -1,0 +1,137 @@
+/* ===== Plano de fundo do body ===== */
+body {
+    background-color: #d3d3d3; /* cinza claro */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Parágrafo inicial ===== */
+#Primeiro_p {
+    color: #222;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* ===== Divs principais ===== */
+.divs {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+/* ===== Listas ===== */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ===== Imagens dentro de li ===== */
+li img {
+    display: block;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+/* ===== Links ===== */
+a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+/* ===== Inputs ===== */
+input[type="email"],
+input[type="text"],
+select {
+    border: 3px solid #ffa500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* ===== Radio e checkbox ===== */
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* ===== Botões ===== */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #ffa500;
+    color: #000;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* ===== Tabela ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid #ffa500;
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #222;
+}
+
+tfoot {
+    background-color: #333;
+    color: #ffa500;
+    font-weight: bold;
+}
+
+/* ===== Pseudo-elemento decorativo ===== */
+h1::after {
+    content: " 🐱";
+}
+
+/* ===== Responsividade básica ===== */
+@media screen and (max-width: 768px) {
+    .divs {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    li img {
+        width: 100%;
+        height: auto;
+    }
+}
+
